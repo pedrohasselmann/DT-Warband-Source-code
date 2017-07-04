@@ -1,0 +1,170 @@
+Dark Tower Mod
+
+previously...
+
+Map textures from World Map HD v1.2
+
+Native Scene Replacement Pack by THe_Bowman_TW.
+
+WRECK compiler by Lav.
+
+
+(11/06/2017)
+
+based on overhauled module system of Autolykos & Ramaraunt.
+
+
+(16/06/2017)
+
+Texts on the Character build menu in compliance with Dark Tower scenario.
+
+
+(18/06/2017)
+
+Missing textures:
+
+ WARNING: UNABLE TO MAP SOUND CODE:  snd_release_crossbow_medium 
+ WARNING: UNABLE TO MAP SOUND CODE:  snd_release_crossbow_far 
+ WARNING: UNABLE TO MAP GAME PRESENTATION CODE:  prsnt_game_start 
+ WARNING: UNABLE TO MAP GAME PRESENTATION CODE:  prsnt_game_escape 
+ WARNING: UNABLE TO MAP GAME SCRIPT CODE:  game_check_party_sees_party 
+ WARNING: UNABLE TO MAP GAME SCRIPT CODE:  game_get_party_speed_multiplier 
+ WARNING: UNABLE TO MAP GAME SCRIPT CODE:  game_missile_launch 
+ WARNING: UNABLE TO MAP GAME SCRIPT CODE:  game_missile_dives_into_water 
+ WARNING: UNABLE TO MAP GAME SCRIPT CODE:  game_troop_upgrades_button_clicked 
+ WARNING: UNABLE TO MAP GAME SCRIPT CODE:  game_character_screen_requested 
+
+Copied \Sounds\ from 1860s America Mod.
+
+Game is running. Error originated in "module_games_menu.py".
+
+Flag ativada: 
+             display_wp_firearms = 1
+
+(19/06/2017)
+
+--Editando skill para adicionar novas. 
+--As ideais sao:
+
+   Grenade Throwing (With Fire & Sword)
+   Shooting from horseback (With Fire & Sword)
+   Forage (Floris) (Merged with Tracking) 
+   Explosives
+   Munition     (find munition as it travels through the map)
+   Draw & Charge (How fast you are to draw and charge your gun)
+   Ka            (Lucky? It's your Ka in action)
+   Magic         (ancient power which stems from the Prim. Ressurection, Doorways, Todash,...)
+
+
+--Editando os atributos iniciais:
+
+    Gunslinger's ascendency -- cb_priest  -- cb2_page -- cb3_squire
+                                                   -- cb3_merc  (failed)
+    Manni's ascendency      -- cb_nomad   -- cb2_steppe_child -- cb3_preacher
+    Wizard's acolyte        -- cb2_acolyte
+
+    Funcionando.....OK!
+
+
+-- Tentando adicionar Foraging como uma modificacao de Tracking
+   POST: [WB v1.127, SP, code, WIP] Adding a new skill: Foraging (v0.1)
+   Codigo por JRider & CUTS
+   Foraging é uma modificacao de Tracking 
+   Modificados: module_script.py, 
+                module_simple_trigger.py
+                module_skills.py
+                header_skills.py
+   Compilador.... OK!
+
+(20/06/2017)
+
+--Mexendo no module.ini:
+
+can_crouch = 1
+can_objects_make_sound = 1
+disable_zoom = 0
+use_advanced_formation = 1
+use_crossbow_as_firearm = 1
+can_reload_while_moving = 1
+can_run_faster_with_skills = 1
+use_phased_reload = -1
+horses_try_running_away = 1
+horses_rear_with_attack = 1
+lance_pike_effect_speed = 3.0
+no_friendly_fire_for_bots = 0
+can_adjust_camera_distance = 1
+sync_ragdoll_effects = 0
+has_forced_particles = 1
+can_use_scene_props_in_single_player = 1
+disable_attack_while_jumping = 0
+disable_high_hdr = 0
+has_accessories_for_female = 1
+restrict_attacks_more_in_multiplayer = 0
+
+(22/06/2017)
+
+-- Atributos e pericias para as linhas de historia de fundo foram parcialmente modificadas.
+
+-- Cidade inicial: village_100 (vila no deserto)
+
+-- Adicionando Character Creation Screen 1.2 by mercury 19
+
+   Compiladr....Ok!
+
+   Falta adaptar ao texto anterior.
+
+(25/06/2017)
+
+module_script.py : Character Creation Screen
+-- Textos estao adaptados
+-- adicionador father background: cb_doctor
+-- Modificando os atributos
+
+(26/06/2017)
+
+-- Nome dos meses alterados de acordo com Mid-World
+
+-- mnu_start_phase_3 merged with mnu_start_phase_2
+
+(30/06/2017)
+
+Editando e adicionando armas de fogo
+
+-- Texturas para match-lock e flintlock adicionadas.
+-- Adicionando armas copiadas de 1860s Old America by Gabriel Duro Mod.
+
+-- Nota: O All-World possui alem de revolvers tambem rifles.
+
+   Mid-World:
+        
+   Sandalwood gun --  Colt Single Action Army / The Peacemaker .45 Long Colt.
+   Single-shot rifles  --  Springfield?
+   Single-action revolvers -- Colt Paterson, Walter Colt
+   single-shot pistols -- 
+   Single/Double barrel Shotguns
+   cannons
+   grenades
+
+   De outros mundos (Paradigm World Mod by Karol Grodecki):
+   Magical artefacts
+   Magical Staffs
+   Snitchs
+   Lightsabers
+   Modern weapons
+   
+-- Modicadas as Animacoes dos reload_pistol, ready_musket, reload_musket
+
+-- Adicionado o logo Dark Tower
+
+(02/06/2017)
+
+-- Reckoning items adicionados no fim da lista (cartridges, ammons, tank,...)
+
+-- Por consequencia, module_animation e module_particle_system foram editados
+para adicionar novas animacoes
+
+
+
+
+
+
